@@ -1,0 +1,57 @@
+@import 'colors';
+.call {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 320px;
+    height: 676px;
+    z-index: 10005;
+    padding: 24px 16px 75px 16px;
+    background-color: $background-color-menu;
+    &__btn {
+        margin-bottom: 40px;
+    }
+    &__input {
+        border: 1px solid $el-after;
+        border-radius: 8px;
+        padding:  12px 110px 12px 16px;
+        margin-bottom: 16px;
+        font-size: 16px;
+        color: $paginator-focus;
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 24px; 
+    }
+    &__title::before{
+        content: "";
+        width:4px;
+        height: 40px;
+        background-color: $link-before;
+        display: inline-block;
+        border-radius:0px 10px 10px 0px;
+        position: absolute;
+        left: 0px;
+        top: 95px;
+    }
+    &__about {
+        margin-bottom: 23px;
+    }
+    &__paragraph {
+        font-size: 14px;
+        line-height: 16px;
+        color: $menu-link-focus;
+    }
+    &__link {
+        color: $call-link;
+    }
+    &__btn-send {
+        margin-left: 140px
+    }
+}
+
+.call-open{
+    display: block;
+}

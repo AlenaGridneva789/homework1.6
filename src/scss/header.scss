@@ -1,0 +1,42 @@
+@import 'colors';
+.header {
+    padding: 18.59px 16px 17.59px 16px;
+    border-bottom: 1px solid $border;  
+    background-color:$background-color-menu;
+    @media (min-width: 768px){
+        padding-left:24px;
+        padding-right: 24px;
+        }
+    @media (min-width: 1440px){
+        display:flex;
+        justify-content: flex-end;
+        background-color: $background-color-body;
+        border: none;
+        padding: 42px 32px 10px 32px;
+        }
+}
+.buttons {
+    background-color:inherit;
+    -webkit-transition-duration: 0.5s;
+         -o-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+}
+.buttons:hover{
+    -webkit-filter:opacity(0.6);
+            filter:opacity(0.6);
+}
+.burger-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 51px;
+		&__btn-close {
+            margin-right: 16.73px;
+                @media(min-width:1440px){
+                    display: none;
+                }
+            }
+		&__search {
+            margin-left: auto; 
+		}
+}

@@ -1,0 +1,30 @@
+@import 'colors';
+.footer {
+    text-align: center;
+    line-height: 16px;
+    color: $menu-link-focus;
+    opacity: 72%;
+   font-size: 14px;
+   padding: 16px 16px 5px 16px;
+   background-color: $background-color-body;
+    @media(min-width:768px){
+        display: flex;
+        text-align: left;
+        justify-content:space-between;
+        padding-top: 70px;
+    }
+
+    &__copy {
+        
+        margin-bottom: 16px;
+        @media(min-width: 768px){
+            width: 218px;
+        }
+    }
+    &__copy-i {
+        @media(min-width: 768px){
+            text-align: right;
+        }
+    }
+
+}

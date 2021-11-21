@@ -1,0 +1,94 @@
+@import 'colors';
+.technique {
+    
+    &__list-container {
+        position: relative;
+        background-color: #F8F8F8;
+    }
+    &__list-container::after{
+        position: absolute;
+        display: block;
+        content: "";
+        width: 24px;
+        height: 166px;
+        top: 0;
+        right: 0;
+        background-image: -webkit-gradient(linear, right top, left top, color-stop(16.84%, $background-color-body), to(rgba(248, 248, 248, 0.0001)));
+        background-image: -o-linear-gradient(right, $background-color-body 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+        background-image: linear-gradient(270deg, $background-color-body 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+        z-index: 999; 
+      }
+    &__list {
+        margin-bottom: 30px;
+        padding: 16px;
+        @media (min-width: 768px){
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        margin-bottom: 0;
+        max-width: 768px;
+        @media(min-width:1120px){
+        max-width: 1120px;
+        }
+        }
+    }
+    &__list &__list-items {
+        -ms-flex-negative:1;
+        flex-shrink:1;
+        @media(min-width: 768px){
+            width: auto;
+            margin-right: 16px;
+            margin-bottom: 16px;
+            margin-left: 8px;
+        }
+    }
+    &__list-items--hidden {
+        
+        @media(min-width: 768px){
+            display: none; 
+        }
+    }
+    &__list-items--visible {
+        @media(min-width: 768px){
+            display: block; 
+        }
+    }
+    &__list-items:nth-child(4){
+        @media(min-width: 1120px){
+            display: block;
+        }
+    }
+
+    &__list-img {
+        width: 220px;
+        height: 160px;
+        @media(min-width:1120px){
+            width: 240px;
+        }
+    }
+    &__btn {
+        display: none;
+        @media(min-width: 768px){
+            display: block;
+            padding-left: 32px;
+            padding-bottom: 34px;
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: -0.2px;
+            color: $color-text;  
+        }
+    }
+    &__btn-img {
+        @media(min-width: 768px){
+            margin-right: 17px;
+            margin-top: 6px; 
+        }
+    }
+    &__btn-img--rotate{
+        -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+                transform: rotate(180deg);
+       }
+}

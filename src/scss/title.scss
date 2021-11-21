@@ -1,0 +1,13 @@
+@import 'colors';
+.title{
+    font-size: 16px;
+    line-height: 24px;
+    padding: 16px;
+    background-image: -webkit-gradient(linear, right top, left top, from($background-color-body), color-stop(98.61%, $background-color-menu));
+    background-image: -o-linear-gradient(right,$background-color-body 0%,$background-color-menu  98.61%);
+    background-image: linear-gradient(90deg, $background-color-body 0%, $background-color-menu 98.61%);
+    border-top:1px solid $border;
+    color: $menu-link-focus;
+    font-weight: 400;
+    letter-spacing: -0.2px; 
+}

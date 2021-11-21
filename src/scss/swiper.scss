@@ -1,0 +1,13 @@
+@import 'colors';
+.swiper-wrapper {
+    width: 100%
+   }
+   .swiper-pagination .swiper-pagination-bullet {
+   background-color:$paginator-bullet;
+    width: 12px;
+    height: 12px;
+   }
+   
+   .swiper-pagination .swiper-pagination-bullet:focus{
+       background-color:$paginator-focus;
+      }

@@ -1,0 +1,43 @@
+@import 'colors';
+@import 'fonts';
+@import 'nullStyle';
+@import 'burger-menu';
+@import 'menu';
+@import 'main';
+@import 'brands';
+@import 'technique';
+@import 'feedback';
+@import 'price';
+@import 'call';
+@import 'feedback-menu';
+@import 'footer';
+@import 'swiper';
+@import 'title';
+@import 'header';
+body{
+    font-family: "TT Lakes",sans-serif;
+    color:$color-text;
+    background-color:$background-color-body;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.container {
+    @media(min-width:1440px){
+        margin-left: 320px;
+    } 
+}
+.container--opasity{
+    opacity: 0.05;
+}
+
+
+
+
+
+
+
+
+
+
+

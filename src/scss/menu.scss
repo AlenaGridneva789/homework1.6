@@ -1,0 +1,120 @@
+@import 'colors';
+.menu {
+    display: flex; 
+    justify-content: space-between;
+    width: 100%;
+		&__burger {
+            @media(min-width: 1440px){
+                display: none;
+            }
+		}
+        &__burger::after{
+            @media (min-width: 768px){
+            content: "";
+            height: 32px;
+            width: 2px;
+            background-color:$el-after;
+            display:inline-block;
+            margin-left: 20px;
+            margin-right: 4px;
+            margin-top: 4px; 
+            }
+            @media(min-width: 1120px){
+                display: none;
+            }
+            }
+		& &__btn-img{
+            @media (min-width: 768px){
+                margin-right: 16px;
+                }
+		}
+        &__btn {
+           
+            @media (min-width: 768px){
+                margin-right: 16px;
+                }
+		}
+        &__btn:last-child{
+            @media (min-width: 768px){
+                margin-right: 0px;
+                }
+        }
+		&__logo {
+            margin-right: auto;
+            margin-left: 16.7px;
+            @media (min-width: 768px){
+                margin-left: 0px;
+                }
+             @media (min-width: 1440px){
+                 display: none;  
+            }
+		}
+		&__btn-call {
+            display: none;
+            @media (min-width: 768px){
+                display: block;  
+            }
+            @media(min-width: 1120px){
+                display: none;
+            }
+		}
+		&__btn-chat {
+            display: none;
+            @media (min-width: 768px){
+                display: block;  
+            }
+            @media (min-width:1120px){
+                display: none;
+            }
+		}
+		&__btn-profile {
+            display: none;
+            @media (min-width: 768px){
+                display: block;  
+            }
+            @media(min-width:1120px){
+                display: none;
+            }
+		}
+		&__btn-repair::before{
+            content: "";
+            height: 32px;
+            width: 2px;
+            background-color:$el-after;
+            display:inline-block;
+            margin-right: 18px;
+            margin-top: 2px;
+            @media (min-width: 1120px){
+                display: none;  
+            }
+        }
+        &__btn-repair{
+            margin-right: 16px;
+            @media (min-width: 1120px){
+               display: flex;  
+               
+           }
+           @media (min-width:1440px){
+               margin-left: 650px;
+           }
+        }
+
+		&__btn-span {
+            display: none;
+            @media (min-width: 1120px){
+                display: inline-block;
+                align-self: center;
+                font-family: "TT Lakes",sans-serif;
+                font-weight: 500;
+                color:$color-text;
+                font-size: 16px;
+                letter-spacing: -0.2;
+                margin-right: 8px;  
+           }
+		}
+		&__btn-checkstatus {
+            @media (min-width: 1120px){
+                display: flex;  
+           }
+		}
+}

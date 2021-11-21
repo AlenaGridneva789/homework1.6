@@ -1,0 +1,32 @@
+.feedback {
+    &__btn {
+        margin: 0px 16px 16px 0px;
+        @media(min-width:768px){
+        margin-top: 236px;
+        }
+        @media(min-width: 1440px){
+            margin-top: auto;
+        }
+    }
+    &__email {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        color:inherit;
+        font-size: 16px;
+        margin-bottom: 12px;
+        line-height: 24px;
+    }
+
+    &__tel {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        color: inherit;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 40px;
+        line-height: 32px;
+        letter-spacing: -0.6px;
+    }
+}
